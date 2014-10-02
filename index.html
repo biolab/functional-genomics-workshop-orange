@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CIBR Workshop - Data Mining without Programming by biolab</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+        <h2>CIBR Workshop - Data Mining without Programming</h2>
+
+        <h3>Software Installation Instructions</h3>
+
+		<p>In two steps, for <a href="#mac">Mac OS X</a>, <a href="#win">Windows</a>, and <a href="#lin">Linux</a></p>
+
+      </header>
+      <section>
+
+
+<p>
+The following instructions will guide you to install Orange data mining suite we will use at the workshop. If you have any questions or any problems with the installation, you are welcome to visit us at the Installation Clinic on Friday, Monday or Tuesday (May 16, 18, or 19) at Baylor College of Medicine, Smith Building, room S921 (Blaz Zupan and Marinka Zitnik). Installation Clinic will officially run from 2pm to 5pm, but you are also welcome to come by any other time.</p>
+
+<p>Installation of Orange is operating-system specific, but common to Mac, Windows and Linux is that you need to 
+<ol>
+<li>install Orange with add-ons for bioinformatics and network analysis, and</li>
+<li>install a few data files that we will use during the workshop.</li>
+</ol></p>
+
+<h3><a name="mac"></a>Step 1: Mac OS X</h3>
+
+<h4>In a nutshell</h4>
+
+<p>Go to Orange home page at <a href="http://orange.biolab.si">http://orange.biolab.si</a>, download the latest version of Orange (the dmg file), install it on your laptop and continue to <a href="#s3">Step 2</a> below.</p>
+
+<h4>Detailed installation instructions</h4>
+
+
+<p>Go to Orange home page at <a href="http://orange.biolab.si">http://orange.biolab.si</a> to download the installation file.</p>
+
+<p><img src="image08.png" style="max-width:500px;"></p>
+
+<p>Your browser will most likely save the installation file (a file with a name similar to Orange-2.7.5-11947.dmg) in your Downloads folder. Open the installation file by double clicking on its icon. A window like the one below should open. Drag the Orange icon to your Applications.</p>
+
+<p><img src="image01.png" style="max-width:250px;"></p>
+
+<p>Open Orange from your Application folder. That is, open the Application folder, find an application with the name Orange, click on its icon to select it, and open it by choosing Open from Finder's File menu (you should use this procedure instead of double click to open unregistered applications for the first time). Continue to the <a href="#s3">Step 2</a> of this installation tutorial.</p>
+
+<h3><a name="win"></a>Step 1: Windows</h3>
+
+<h4>In a nutshell</h4>
+
+<ul>
+<li>Download and open Orange installer (exe file) from <a href="http://orange.biolab.si">http://orange.biolab.si</a>.</li>
+<li>Install all necessary tools that are offered by the installer (Python 2.7, NumPy, ...).</li>
+<li>Launch Orange Canvas from your desktop.</li>
+<li>With Orange running, close the splash screen and choose Add-ons from the Options menu.</li>
+<li>Tick the add-ons for Orange-Bioinformatics and Orange-Network and click OK.</li>
+<li>Restart Orange and go to <a href="#s3">Step 2</a> to install additional data files.</li>
+</ul>
+
+<h4>Detailed installation instructions</h4>
+
+<p>Download the installation file (the exe file) you will find on <a href="http://orange.biolab.si">http://orange.biolab.si</a> under the link “Orange 2.7 for Windows” (green arrow in the screenshot below). Save the downloaded file to an arbitrary location. Run the installation by double clicking the downloaded file. Choose Yes when asked whether you want to allow this program to make changes to your computer and accept the license agreement.</p>
+
+<p><img src="image10.png" style="max-width:500px;"></p>
+
+<p>Accept to install all the necessary tools offered by the installer (Python 2.7, NumPy, SciPy, PIL, PyQt, ...). There are a number of them and installation will take a while.</p>
+
+<!-- <p><img src="image07.png" style="max-width:300px;"></p> -->
+
+<!-- <p><img src="image05.png" style="max-width:300px;"></p> -->
+
+<p><img src="image03.png" style="max-width:300px;"></p>
+
+<p>Launch Orange by double-clicking the Orange Canvas icon on your desktop.</p>
+
+<p><img src="image09.png" style="max-width:600px;"></p>
+
+<p>You should see a window like shown in the figure below. Close the welcome dialog.</p>
+
+<p><img src="orangeadd1.PNG" style="max-width:450px;"></p>
+
+<p>From the Options menu choose Add-ons.</p>
+
+<p><img src="orangeadd2.PNG" style="max-width:400px;"></p>
+
+<p>Tick the add-ons for Orange-Bioinformatics and Orange-Network. Click OK to start the installation. This may take a while.</p>
+
+<p><img src="orangeadd3.PNG" style="max-width:400px;"></p>
+
+<p>Close Orange (choose Quit from the File menu) and re-open it. Continue to the <a href="#s3">Step 2</a> of this installation tutorial.</p>
+
+
+<h3><a name="lin"></a>Step 1: Linux</h3>
+
+<h4>Ubuntu (tested on Ubuntu 12.04 and 14.04)</h4>
+
+<p>Open a terminal and run the following commands.</p>
+
+<p>Install the necessary system packages:</p>
+
+<pre><code>sudo apt-get update
+sudo apt-get install python-numpy libqt4-opengl-dev libqt4-dev cmake qt4-qmake python-sip-dev python-qt4 python-qt4-dev python-qwt5-qt4 python-sip graphviz python-networkx python-imaging python-qt4-gl build-essential python-pip python-scipy python-pyparsing ipython python-matplotlib</pre></code>
+
+<p>Install Orange (this step will take about 15 minutes):</p>
+
+<pre><code>sudo easy_install -U distribute # optional on Ubuntu 14.04
+sudo pip install --global-option="build_pyqt_ext" orange</pre></code>
+
+<p>Install network and bioinformatics add-ons:</p>
+
+<pre><code>sudo pip install slumber
+sudo pip install orange-bioinformatics
+sudo pip install orange-network</pre></code>
+
+<p>Start Orange by running “orange-canvas” from the terminal.  Continue to <a href="#s3">step 2</a>.</p>
+
+<pre><code>orange-canvas</pre></code>
+
+
+<h4>Fedora (tested on Fedora 20)</h4>
+
+<p>Open a terminal and run the following commands.</p>
+
+<p>Install the necessary system packages:</p>
+
+<pre><code>sudo yum update
+sudo yum groupinstall "KDE Software Development"
+sudo yum install numpy scipy python-matplotlib ipython python-pandas sympy python-nose pyparsing python-pip gcc gcc-c++ python-networkx PyQwt
+</pre></code>
+
+<p>Install Orange (this step will take about 15 minutes):</p>
+
+<pre><code>sudo bash -c 'export PATH=$PATH:/usr/lib64/qt4/bin/:/usr/lib/qt4/bin/ && pip install --global-option="build_pyqt_ext" orange'
+</pre></code>
+
+<p>Install network and bioinformatics add-ons:</p>
+
+<pre><code>sudo pip install slumber
+sudo pip install orange-bioinformatics
+sudo pip install orange-network</pre></code>
+
+<p>4. Start Orange by running “orange-canvas” from the terminal. Continue to <a href="#s3">step 2</a>.</p>
+
+<pre><code>orange-canvas</pre></code>
+
+<h3><a name="s3"></a>Step 2: Installation of Workshop Data Files</h3>
+
+<h4>In a Nutshell</h4>
+
+<p>On Orange’s splash screen choose Tutorial, then press Open to open a preloaded workflow called “BMC Workshop”. Wait until the download finishes.</p>
+
+<h4>Detailed instructions</h4>
+
+<p>After running Orange at the end of Step 2, your laptop should now include the running version of Orange showing the welcome screen:</p>
+
+<p><img src="image02.png" style="max-width:450px;"></p>
+
+<p>Click on the icon for Tutorial.</p>
+
+<p><img src="image04.png" style="max-width:450px;"></p>
+
+<p>A window with tutorial workflows should open. The first workflow that has been designed to install all necessary data files for the workshop is already selected. Just click Open to open it and start the download of the data files.</p>
+
+<p><img src="image13.png" style="max-width:450px;"></p>
+
+<p>A window similar to the one below should open. It will start downloading the data. This should not take more than a minute. Once the download is finished, close the topmost open window (“Databases Package”). Make sure that the Orange window called “BCM Workshop” shows the three colored icons (Scatter Plot, Net Explorer, Differential Expression) without any markings above. If this is so, congratulations, you have completed the installation. See you at the workshop! If this is no so, and you have any problems with the installation, please find us at Baylor at the Installation Clinic.</p>
+
+<p><img src="image06.png"></p>
+
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
