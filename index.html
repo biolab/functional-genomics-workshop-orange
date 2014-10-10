@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>CIBR Workshop - Data Mining without Programming by biolab</title>
+    <title>Functional Genomics Workshop 2014 - Data Mining without Programming</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -116,12 +116,14 @@ The following instructions will guide you to install Orange data mining suite we
 <p>Install the necessary system packages:</p>
 
 <pre><code>sudo apt-get update
-sudo apt-get install python-numpy libqt4-opengl-dev libqt4-dev cmake qt4-qmake python-sip-dev python-qt4 python-qt4-dev python-qwt5-qt4 python-sip graphviz python-networkx python-imaging python-qt4-gl build-essential python-pip python-scipy python-pyparsing ipython python-matplotlib</pre></code>
+sudo apt-get install python-numpy libqt4-opengl-dev libqt4-dev cmake qt4-qmake python-sip-dev python-qt4 python-qt4-dev python-qwt5-qt4 python-sip graphviz python-networkx python-imaging python-qt4-gl build-essential python-pip python-scipy python-pyparsing ipython python-matplotlib
+sudo easy_install -U distribute # optional on Ubuntu 14.04
+</pre></code>
 
 <p>Install Orange (this step will take about 15 minutes):</p>
 
-<pre><code>sudo easy_install -U distribute # optional on Ubuntu 14.04
-sudo pip install --global-option="build_pyqt_ext" orange</pre></code>
+<pre><code>sudo pip install qt-graph-helpers
+sudo pip install orange</pre></code>
 
 <p>Install network and bioinformatics add-ons:</p>
 
@@ -164,15 +166,11 @@ sudo pip install orange-network</pre></code>
 
 <h4>In a Nutshell</h4>
 
-<p>On Orange’s splash screen choose Tutorial, then press Open to open a preloaded workflow called “BMC Workshop”. Wait until the download finishes.</p>
+<p>On Orange’s splash screen choose Tutorial, then press Open to open a preloaded workflow called “Functional Genomics Workshop 2014”. Wait until the download finishes.</p>
 
 <h4>Detailed instructions</h4>
 
-<p>After running Orange at the end of Step 2, your laptop should now include the running version of Orange showing the welcome screen:</p>
-
-<p><img src="image02.png" style="max-width:450px;"></p>
-
-<p>Click on the icon for Tutorial.</p>
+<p>After running Orange at the end of Step 2, your laptop should now include the running version of Orange showing the welcome screen. Click on the icon for Tutorial.</p>
 
 <p><img src="image04.png" style="max-width:450px;"></p>
 
@@ -180,7 +178,7 @@ sudo pip install orange-network</pre></code>
 
 <p><img src="image13.png" style="max-width:450px;"></p>
 
-<p>A window similar to the one below should open. It will start downloading the data. This should not take more than a minute. Once the download is finished, close the topmost open window (“Databases Package”). Make sure that the Orange window called “BCM Workshop” shows the three colored icons (Scatter Plot, Net Explorer, Differential Expression) without any markings above. If this is so, congratulations, you have completed the installation. See you at the workshop! If this is no so, and you have any problems with the installation, please find us at Baylor at the Installation Clinic.</p>
+<p>A window similar to the one below should open. It will start downloading the data. This should not take more than a minute. Once the download is finished, close the topmost open window (“Databases Package”). Make sure that the Orange window called “Functional Genomics Workshop 2014” shows the three colored icons (Scatter Plot, Net Explorer, Differential Expression) without any markings above. If this is so, congratulations, you have completed the installation. See you at the workshop! If this is no so, and you have any problems with the installation, please visit the Installation Clinic.</p>
 
 <p><img src="image06.png"></p>
 
